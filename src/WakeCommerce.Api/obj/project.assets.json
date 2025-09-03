@@ -1194,6 +1194,20 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "WakeCommerce.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.8",
+          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.8"
+        },
+        "compile": {
+          "bin/placeholder/WakeCommerce.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WakeCommerce.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -3566,15 +3580,22 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "WakeCommerce.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../WakeCommerce.Infrastructure/WakeCommerce.Infrastructure.csproj",
+      "msbuildProject": "../WakeCommerce.Infrastructure/WakeCommerce.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.AspNetCore.OpenApi >= 9.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.8",
+      "Microsoft.EntityFrameworkCore.Design >= 9.0.8",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.8",
-      "Swashbuckle.AspNetCore >= 9.0.4"
+      "Swashbuckle.AspNetCore >= 9.0.4",
+      "WakeCommerce.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3583,11 +3604,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guilh\\OneDrive\\Documents\\Wake\\WakeCommerce.Api\\WakeCommerce.Api.csproj",
+      "projectUniqueName": "C:\\Users\\guilh\\OneDrive\\Documents\\Wake\\src\\WakeCommerce.Api\\WakeCommerce.Api.csproj",
       "projectName": "WakeCommerce.Api",
-      "projectPath": "C:\\Users\\guilh\\OneDrive\\Documents\\Wake\\WakeCommerce.Api\\WakeCommerce.Api.csproj",
+      "projectPath": "C:\\Users\\guilh\\OneDrive\\Documents\\Wake\\src\\WakeCommerce.Api\\WakeCommerce.Api.csproj",
       "packagesPath": "C:\\Users\\guilh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guilh\\OneDrive\\Documents\\Wake\\WakeCommerce.Api\\obj\\",
+      "outputPath": "C:\\Users\\guilh\\OneDrive\\Documents\\Wake\\src\\WakeCommerce.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\guilh\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3601,7 +3622,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\guilh\\OneDrive\\Documents\\Wake\\src\\WakeCommerce.Infrastructure\\WakeCommerce.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\guilh\\OneDrive\\Documents\\Wake\\src\\WakeCommerce.Infrastructure\\WakeCommerce.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -3625,6 +3650,12 @@
             "version": "[9.0.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[9.0.8, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.8, )"
           },
