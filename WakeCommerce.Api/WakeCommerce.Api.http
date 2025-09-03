@@ -1,0 +1,6 @@
+@WakeCommerce.Api_HostAddress = http://localhost:5042
+
+GET {{WakeCommerce.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
