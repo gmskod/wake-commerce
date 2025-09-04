@@ -1,0 +1,6 @@
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\WakeCommerce.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\WakeCommerce.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\WakeCommerce.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\WakeCommerce.Infrastructure.AssemblyInfo.cs
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\WakeCommerce.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\WakeCommerce.Infrastructure.sourcelink.json

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WakeCommerce.Api</name>
+    </assembly>
+    <members>
+        <member name="M:WakeCommerce.Api.Controllers.ProdutoController.ObterTodos">
+            <summary>
+            Retorna todos os produtos cadastrados.
+            </summary>
+            <returns>Lista de produtos.</returns>
+        </member>
+        <member name="M:WakeCommerce.Api.Controllers.ProdutoController.ObterPorId(System.Int32)">
+            <summary>
+            Retorna um produto específico pelo seu ID.
+            </summary>
+            <param name="id">ID do produto a ser retornado.</param>
+            <returns>Produto encontrado ou NotFound caso não exista.</returns>
+        </member>
+        <member name="M:WakeCommerce.Api.Controllers.ProdutoController.Criar(WakeCommerce.Domain.Models.Produto)">
+            <summary>
+            Adiciona um novo produto ao banco de dados.
+            </summary>
+            <param name="produto">Objeto do produto a ser criado.</param>
+            <returns>Produto criado com sucesso.</returns>
+        </member>
+        <member name="M:WakeCommerce.Api.Controllers.ProdutoController.Atualizar(System.Int32,WakeCommerce.Domain.Models.Produto)">
+            <summary>
+            Atualiza os dados de um produto existente.
+            </summary>
+            <param name="id">ID do produto a ser atualizado.</param>
+            <param name="produto">Objeto do produto com os novos dados.</param>
+            <returns>NoContent se atualizado, BadRequest se o ID não corresponder.</returns>
+        </member>
+        <member name="M:WakeCommerce.Api.Controllers.ProdutoController.Deletar(System.Int32)">
+            <summary>
+            Remove um produto do banco de dados pelo seu ID.
+            </summary>
+            <param name="id">ID do produto a ser removido.</param>
+            <returns>NoContent se removido, NotFound se não existir.</returns>
+        </member>
+        <member name="M:WakeCommerce.Api.Controllers.ProdutoController.BuscarPorNome(System.String)">
+            <summary>
+            Buscar produtos pelo nome
+            </summary>
+            <param name="nome">Parte ou todo o nome do produto</param>
+        </member>
+        <member name="M:WakeCommerce.Api.Controllers.ProdutoController.Ordenar(System.String,System.Boolean)">
+            <summary>
+            Ordenar produtos por um campo (nome, estoque, valor)
+            </summary>
+            <param name="campo">Campo para ordenação: nome, estoque, valor</param>
+            <param name="desc">true para ordem decrescente</param>
+        </member>
+        <member name="M:WakeCommerce.Api.Controllers.ProdutoController.AtualizarEstoque(System.Int32,System.Int32)">
+            <summary>
+            Atualiza apenas o estoque de um produto.
+            </summary>
+            <param name="id">ID do produto</param>
+            <param name="quantidade">Quantidade a adicionar (ou remover se negativo)</param>
+        </member>
+    </members>
+</doc>
