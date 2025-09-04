@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WakeCommerce.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a96fb65a769ac769edd0cc1ffae5b65ff40b6f8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c218f3490f616aa281b73c873878e2c1fceb3c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("WakeCommerce.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WakeCommerce.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
