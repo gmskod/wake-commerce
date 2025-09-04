@@ -4,3 +4,13 @@ C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug
 C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\WakeCommerce.Infrastructure.AssemblyInfo.cs
 C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\WakeCommerce.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\WakeCommerce.Infrastructure.sourcelink.json
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\bin\Debug\net9.0\WakeCommerce.Infrastructure.deps.json
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\bin\Debug\net9.0\WakeCommerce.Infrastructure.dll
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\bin\Debug\net9.0\WakeCommerce.Infrastructure.pdb
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\bin\Debug\net9.0\WakeCommerce.Domain.dll
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\bin\Debug\net9.0\WakeCommerce.Domain.pdb
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\WakeComm.47E9DDE7.Up2Date
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\WakeCommerce.Infrastructure.dll
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\refint\WakeCommerce.Infrastructure.dll
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\WakeCommerce.Infrastructure.pdb
+C:\Users\guilh\OneDrive\Documents\Wake\src\WakeCommerce.Infrastructure\obj\Debug\net9.0\ref\WakeCommerce.Infrastructure.dll

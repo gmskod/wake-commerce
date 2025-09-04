@@ -1,76 +1,63 @@
-🛒 Wake Commerce API
+WakeCommerce API
 
-API REST desenvolvida para o desafio técnico da Wake Commerce.
-O projeto implementa um CRUD completo de produtos, utilizando .NET 8, Entity Framework Core e boas práticas de arquitetura.
+API REST para gerenciamento de produtos, seguindo a arquitetura Controller → Service → Repository, com .NET 8 e EF Core.
 
-🚀 Tecnologias Utilizadas
+1️⃣ Estrutura do Projeto
+src/
+├─ WakeCommerce.Api/                  # API principal
+│  ├─ Controllers/
+│  │  └─ ProdutoController.cs
+│  ├─ Services/
+│  │  ├─ Interfaces/
+│  │  │  └─ IProdutoService.cs
+│  │  └─ ProdutoService.cs
+│  └─ WakeCommerce.Api.csproj
+├─ WakeCommerce.Domain/               # Entidades do domínio
+│  ├─ Models/
+│  │  └─ Produto.cs
+│  └─ WakeCommerce.Domain.csproj
+├─ WakeCommerce.Infrastructure/       # Repositórios e acesso a dados
+│  ├─ Interface/
+│  │  └─ IProdutoRepository.cs
+│  └─ WakeCommerce.Infrastructure.csproj
+├─ WakeCommerce.Service/              # Serviços que encapsulam regras de negócio
+│  ├─ Interfaces/
+│  │  └─ IProdutoService.cs
+│  └─ ProdutoService.cs
+│  └─ WakeCommerce.Service.csproj
 
-.NET 8 (Web API)
+2️⃣ Tecnologias
 
-Entity Framework Core (Code-First + SQLite)
+.NET 8
 
-Swagger / OpenAPI para documentação
+C# 12
 
-XUnit para testes unitários
+Entity Framework Core (InMemory / Sqlite / SQL Server)
 
-FluentAssertions para validações
+Swashbuckle (Swagger)
 
-GitHub Actions para execução automática de testes (CI)
+Arquitetura em Camadas (API, Service, Domain, Infrastructure)
 
-📦 Estrutura do Projeto
-WakeCommerce.sln
-│
-├── WakeCommerce.Api          # Projeto principal da API
-│   ├── Controllers           # Endpoints da aplicação
-│   ├── Data                 # DbContext e seed de dados
-│   ├── Models               # Entidades do domínio
-│   └── Program.cs           # Configuração inicial
-│
-└── WakeCommerce.Tests        # Projeto de testes unitários e integração
+4️⃣ Endpoints principais
+Produtos
+Método	Endpoint	Descrição
+GET	/api/produto	Retorna todos os produtos
+GET	/api/produto/{id}	Retorna produto pelo ID
+POST	/api/produto	Cria um novo produto
+PUT	/api/produto/{id}	Atualiza um produto existente
+DELETE	/api/produto/{id}	Deleta um produto pelo ID
 
-🏗️ Funcionalidades
+Todos os endpoints retornam códigos HTTP apropriados: 200, 204, 400, 404.
 
-✅ Criar produto (validação para não permitir valor negativo)
-✅ Atualizar produto
-✅ Excluir produto
-✅ Listar todos os produtos
-✅ Visualizar produto por ID
-✅ Ordenação dos produtos por diferentes campos (nome, valor, estoque)
-✅ Busca de produto pelo nome
-✅ Popular o banco de dados automaticamente com 5 produtos iniciais
+5️⃣ Swagger / Documentação
 
-🔧 Como Executar
-1️⃣ Clonar o repositório
-git clone https://github.com/seu-usuario/wake-commerce.git
-cd wake-commerce
+A API possui Swagger integrado.
+Para acessar:
 
-2️⃣ Restaurar dependências
-dotnet restore
+http://localhost:5042/swagger
 
-3️⃣ Aplicar as migrações e criar o banco de dados
-cd WakeCommerce.Api
-dotnet ef database update
+Os summaries nos controllers são exibidos
 
-4️⃣ Rodar a aplicação
-dotnet run --project WakeCommerce.Api
+Parâmetros e tipos de retorno estão documentados
 
-
-A API estará disponível em:
-📌 https://localhost:5001/swagger
-
-🧪 Testes
-
-Rodar os testes:
-
-dotnet test
-
-
-Inclui:
-
-Testes unitários para a lógica de negócios
-
-Testes de integração usando WebApplicationFactory
-
-🌱 Seed de Dados
-
-Ao iniciar a aplicação, o banco é populado automaticamente com 5 produtos de exemplo para facilitar o teste da API.
+Permite testar os endpoints diretamente pela interface web
